@@ -1,0 +1,251 @@
+<style>
+
+  /* css code for navbar */
+  
+  html {
+      height: 100%;
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+  
+    }
+  
+    body {
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+      height: 100%
+      
+  
+    }
+  
+    .topnav{
+      position: sticky ;
+    }
+  
+    .topnav{
+      position: sticky;
+    }
+  
+    .btn,
+    .option-btn,
+    .delete-btn{
+       display: block;
+       width: 100%;
+       text-align: center;
+       background-color:#80aae291;
+       color:var(--white);
+       font-size: 2.5rem;
+       font-family: "Rockwell";
+       padding:1.2rem 3rem;
+       border-radius: 1rem;
+       cursor: pointer;
+       margin-top: 1rem;
+  
+  
+    }
+  
+    .btn:hover,
+    .option-btn:hover,
+    .delete-btn:hover{
+      background-image: url("../im4.jpg");
+    }
+  
+  
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow :hidden;
+      background: rgba(70, 47, 159, 0.539);
+    }
+  
+    ul.topnav li {
+      float: left;
+      padding-inline-start: 10px;
+    }
+  
+    ul.topnav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.909);
+      text-align: center;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold ;
+      font-size: 18px;
+  
+  
+    }
+  
+    ul.topnav li a:hover:not(.active) {
+      background: #73a2f4b0;
+      border-radius: 18px;
+    }
+  
+  
+    ul.topnav li.right {
+      float: right;
+      font-size: 18px;
+      color: #000000;
+   
+      border-radius: 20px;
+      padding-right: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-right: 10px;
+      pointer-events: none;
+  
+  
+    }
+  
+  
+  
+      ::placeholder {
+        color:#2c698d ;
+      }
+  
+  
+  
+      .login-box {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+     padding-top: 200px;
+
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(93, 173, 247, 0.721);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+
+
+
+
+     .main{
+       padding-top: 20px;
+       width: 90%;
+     }
+
+ h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 0 0 5px;
+    padding: 0;
+   color: rgb(245, 241, 244);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 50px;
+    text-align: center;
+   
+    margin-bottom:20px;
+  }
+
+   #mem{
+   list-style-type: none;
+   margin-left:100px;
+   display: list-item;
+   color:#fff;
+
+
+   /* margin-top:2px; */
+}
+.ul-2{
+  /* margin-top:200px; */
+  margin-top:20px;
+  margin-left:20px;
+  margin-bottom: 20px;
+  font-size :18px;
+
+}
+.background-img1{
+    background-image: url("../im4.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 625px;
+  }
+  
+  h1 {
+    font-family: 'Times New Roman', Times, serif ;
+    margin: 0 0 20px;
+    padding: 20px;
+   color: rgb(245, 241, 244);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 50px;
+    text-align: center;
+
+    margin-bottom:20px;
+  }
+  .nimg{
+    padding:200px;
+    text-align:center;
+    }
+img{
+margin:50px;
+width:60%;
+}
+.Topic{
+    text-align:center;
+
+}
+      </style>
+  <!DOCTYPE html>
+  <html>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+  <body>
+     <div class = "topnav">
+        <ul class="topnav">
+          <li><a id ="home" href="/"> Upload IMG   </a></li>
+          <li><a href="displayAllKeys">View Key</a></li>
+          <li><a href="SearchanImage">Search</a></li>
+          <li><a href="memory_Cache">memory cash</a></li>
+          <li><a href="#">chart</a></li>
+          <li><a href="memcash">memcashed</a></li>
+          <li><a href="displays3">displays3</a></li>
+          
+        </ul>
+     </div>
+  <h1>Statistics for the Memcache Pool</h1>
+  <div
+  id="myChart" style="width:70%; max-width:680px; height:410px; text-align:center; margin-left:350px;
+  ">
+  </div>
+   <div class="Topic">
+  
+  <script>
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+   ['worker_numm', 'Mhl'],
+   ['items_num', 20],
+    ['items_size',54.8],
+    ['request_num',48.6],
+    ['hit_rate_percent',41],
+    ['miss_rate_percent',23.9],
+    ['capacity_MB',14.5],
+  ]);
+  
+  var options = {
+  <!--  title:'Statistics for the Memcache Pool',-->
+    is3D:true
+  };
+  
+  var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+  }
+  </script>
+  </div>
+  </body>
+  </html>
+  
+  
+  
+  

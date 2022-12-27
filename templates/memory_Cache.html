@@ -1,0 +1,363 @@
+<style>
+
+  /* css code for navbar */
+  
+  html {
+      height: 100%;
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+  
+    }
+  
+    body {
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+      height: 100%
+      
+  
+    }
+  
+    .topnav{
+      position: sticky ;
+    }
+  
+    .topnav{
+      position: sticky;
+    }
+  
+    .btn,
+    .option-btn,
+    .delete-btn{
+       display: block;
+       width: 100%;
+       text-align: center;
+       background-color:#80aae291;
+       color:var(--white);
+       font-size: 2.5rem;
+       font-family: "Rockwell";
+       padding:1.2rem 3rem;
+       border-radius: 1rem;
+       cursor: pointer;
+       margin-top: 1rem;
+  
+  
+    }
+  
+    .btn:hover,
+    .option-btn:hover,
+    .delete-btn:hover{
+      background-image: url("../im4.jpg");
+    }
+  
+  
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow :hidden;
+      background: rgba(70, 47, 159, 0.539);
+    }
+  
+    ul.topnav li {
+      float: left;
+      padding-inline-start: 10px;
+    }
+  
+    ul.topnav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.909);
+      text-align: center;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold ;
+      font-size: 18px;
+  
+  
+    }
+  
+    ul.topnav li a:hover:not(.active) {
+      background: #73a2f4b0;
+      border-radius: 18px;
+    }
+  
+  
+    ul.topnav li.right {
+      float: right;
+      font-size: 18px;
+      color: #000000;
+   
+      border-radius: 20px;
+      padding-right: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-right: 10px;
+      pointer-events: none;
+  
+  
+    }
+  
+
+    ::placeholder {
+      color:#2c698d ;
+    }
+
+
+    .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+     padding-top: 200px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(41, 73, 102, 0.396);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+
+    #mem{
+       display:flex;
+       color:#2c698d;
+    }
+
+
+     .main{
+       padding-top: 20px;
+       width: 90%;
+     }
+
+     .inputBox{
+      margin-left:500px;
+      margin-top:100px;
+     }
+
+
+  .button{
+        font-size: 17px;
+        padding: 10px 12px;
+        font-family: "Segoe Script";
+        letter-spacing: 1px;
+        font-weight: bold;
+        border-radius: 12px;
+        border: none;
+        display: inline-block;
+        background: linear-gradient(#e9e0dfb5 ,#b1679b);
+        text-decoration: none;
+        color: rgb(254 254 254);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.674);
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+.search_input{
+    width: 60%;
+    padding: 11px 0;
+    font-size: 16px;
+    color: rgb(255, 251, 251);
+    font-weight: bold;
+    font-family: "Ink Free";
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: none;
+    /* border-bottom: 1px solid #fff; */
+    outline: none;
+    background: rgba(255, 255, 255, 0.203);
+    border-radius: 20px;
+    cursor: pointer;
+}
+ h2 {
+    font-family: "Segoe Print" ;
+    margin: 0 0 20px;
+    padding: 20px;
+   color: rgb(245, 241, 244);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(211, 119, 179, 0.833);
+    margin-bottom:20px;
+  }
+
+
+.container{
+    width: 90%;
+    height:auto;
+    margin: auto;
+    overflow: hidden;
+ text-align: center;
+    margin-top: 20px;
+}
+
+.container ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+span{
+color:rgba(85, 3, 78, 0.525);
+}
+.container ul li{
+    float:left;
+    list-style: none;
+    width:20%;
+    height:300px;
+    background: rgba(155, 112, 196, 0.853);
+    margin :20px 0px 20px 55px;
+    border:2px solid rgb(179, 107, 179);
+    box-sizing: border-box;
+    line-height: 50px;
+    padding-top:60px;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+}
+.container ul li .bottom{
+   width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: blue;
+   text-align: center;
+    color:white;
+    font-size: 20px;
+
+}
+
+@media screen and (max-width:1250px){
+    .container ul li{
+        width:40%;
+        margin-left: 40px;
+
+    }
+
+    .container1{
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:wrip;
+   }
+
+    .box1{
+        text-align:center;
+        font-size:20px;
+       margin-top:10px;
+       width: 50px;
+       height:50px;
+       padding:100px;
+    background: rgba(255, 255, 255, 0.203);
+  }
+}
+.img1-form{
+      height: 410px;
+      width: 470px;
+      margin-top: 140px;
+      margin-left: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color:hsl(208, 54%, 62%);
+      padding-top: 20px;
+    
+      }
+  .cv{
+  display: block;
+	width: 400px;
+	margin-left: 25px;
+  margin-top: 10px;
+  }
+  .cv-text{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family:Georgia;
+    font-weight: bolder;
+    margin-left: 20px; 
+    font-size:30px;
+    font-weight: bold;
+    color: #184d6b;
+   }
+
+   .text{
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bolder;
+     margin-top: 20px;
+   }
+
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/static/cloud2.png">
+        <link rel="stylesheet"  href="creativ Markiting.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <title> Cloud Project</title>
+        <script src="/assets/static/govuk_publishing_components/vendor/lux/lux-measurer-505eef3e243b1d08ea7c4b945ebe1ae146d896db61366e415b30cc1bcd84cbdc.js"> </script>
+        <script src="/assets/static/govuk_publishing_components/rum-loader-c53469dcb841d7b228c914a2e8bdcf3b831a578adf7d4f21cf9da5b85df7381e.js"></script>
+    </head>
+    <body>
+    <form action=" " method="POST">
+
+
+   <div class = "topnav">
+      <ul class="topnav">
+        <li><a id ="home" href="/"> Upload IMG   </a></li>
+        <li><a href="displayAllKeys">View Key</a></li>
+        <li><a href="SearchanImage">Search</a></li>
+        <li><a href="#">memory cash</a></li>
+        <li><a href="chart">chart</a></li>
+        <li><a href="memcash">memcashed</a></li>
+        <li><a href="displays3">displays3</a></li>
+
+     
+      </ul>
+   </div>
+   <div class="img1-form">
+   <div class="form-group" style="margin: 25px;">
+    <h4 class="cv-text">information:</h4>
+    <label >
+      <label>capacity:</label>
+      <strong>{{capacity_MB}}}MB</strong>
+    </label>
+        </div>
+
+  <div class="form-group"  style="margin: 25px;">
+    <label >
+      <label>hit rate:</label>
+      <strong>{{hit_rate_percent}} <span>%</span> </strong>
+      
+    </label>
+  </div>
+  <div class="form-group"  style="margin: 25px;">
+    <label >
+      <label>miss rate:</label>
+      <strong>{{miss_rate_percent}}<span>%</span> </strong>
+    </label>
+  </div>
+  <div class="form-group"  style="margin: 25px;">
+    <label >
+      <label>item size:</label>
+      <strong>{{items_size}} MB<span>%</span> </strong>
+    </label>
+  </div>
+
+<!--         <div class="container1">-->
+<!--            <div class="box1"> <p>Memcache capacity is {{capacity_MB}} MB</p> </div>-->
+<!--            <div class="box1"><p>The replacement policy is {{replace_policy}}</p> </div>-->
+<!--            <div class="box1"> <p>The number of items in Database is {{items_num}}</p>  </div>-->
+<!--            <div class="box1"> <p> The Total size of items in Cache is {{items_size}} MB</p></div>-->
+<!--            <div class="box1"><p>The number of requests served is {{request_num}}</p> </div>-->
+<!--            <div class="box1"> <p>Miss rate is {{hit_rate_percent}}</p> </div>-->
+<!--            <div class="box1"> <p>Hit rate is {{miss_rate_percent}}</p> </div>-->
+<!--        </div>-->
+    </form>
+    </body>
+    </html>
+    
+    

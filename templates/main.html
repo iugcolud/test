@@ -1,0 +1,355 @@
+<style>
+
+  /* css code for navbar */
+  
+  html {
+      height: 100%;
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+  
+    }
+  
+    body {
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+      height: 100%
+      
+  
+    }
+  
+    .topnav{
+      position: sticky ;
+    }
+  
+    .topnav{
+      position: sticky;
+    }
+  
+    .btn,
+    .option-btn,
+    .delete-btn{
+       display: block;
+       width: 100%;
+       text-align: center;
+       background-color:#80aae291;
+       color:var(--white);
+       font-size: 2.5rem;
+       font-family: "Rockwell";
+       padding:1.2rem 3rem;
+       border-radius: 1rem;
+       cursor: pointer;
+       margin-top: 1rem;
+  
+  
+    }
+  
+    .btn:hover,
+    .option-btn:hover,
+    .delete-btn:hover{
+      background-image: url("../im4.jpg");
+    }
+  
+  
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow :hidden;
+      background: rgba(70, 47, 159, 0.539);
+    }
+  
+    ul.topnav li {
+      float: left;
+      padding-inline-start: 10px;
+    }
+  
+    ul.topnav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.909);
+      text-align: center;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold ;
+      font-size: 18px;
+  
+  
+    }
+  
+    ul.topnav li a:hover:not(.active) {
+      background: #73a2f4b0;
+      border-radius: 18px;
+    }
+  
+  
+    ul.topnav li.right {
+      float: right;
+      font-size: 18px;
+      color: #000000;
+   
+      border-radius: 20px;
+      padding-right: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-right: 10px;
+      pointer-events: none;
+  
+  
+    }
+  
+  
+  
+      ::placeholder {
+        color:#2c698d ;
+      }
+  
+  
+
+  
+  
+  
+       .main{
+         padding-top: 20px;
+         width: 90%;
+       }
+  
+   h2 {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+      margin: 0 0 5px;
+      padding: 0;
+     color: rgb(245, 241, 244);
+      /* color: rgb(185, 154, 82); */
+      font-weight: 200px;
+      font-size: 50px;
+      text-align: center;
+     
+      margin-bottom:20px;
+    }
+  
+     #mem{
+     list-style-type: none;
+     margin-left:100px;
+     display: list-item;
+     color:#fff;
+  
+  
+     /* margin-top:2px; */
+  }
+  .ul-2{
+    /* margin-top:200px; */
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom: 20px;
+    font-size :18px;
+  
+  }
+  .background-img1{
+      background-image: url("../im4.jpg");
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size:cover;
+      height: 625px;
+    }
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background: rgba(33, 132, 225, 0.396);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+
+  .login-box h2 {
+    font-family: "Segoe Print" ;
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(245, 241, 244);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 27px;
+    text-align: center;
+ 
+  }
+
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input {
+
+    width: 100%;
+    padding: 11px 0;
+    font-size: 14px;
+    color: rgb(249, 247, 248);
+    font-family: "Calibri";
+    margin-bottom: 30px;
+    padding-top: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding-bottom: 33px;
+    font-size: 23px;
+    font-family: Ink Free;
+    font-weight: bold;
+    color: rgb(249, 247, 248);
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    margin-top: 14px;
+    color: rgb(248, 246, 243);
+    font-size: 20px;
+  }
+
+
+
+  /* css button in box */
+
+  .login-box form button{
+    position: relative;
+    display: inline-block;
+    background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    color:  rgb(239, 227, 227);
+    font-size: 20px;
+    font-weight: bold ;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 25px;
+    /* letter-spacing: 2px ; */
+    font-family:Ink Free ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.437) ;
+    margin-right: 85px;
+
+  }
+
+
+  .login-box form button a{
+
+    text-decoration: none;
+    color:  rgb(239, 227, 227);
+    font-size: 18px;
+
+  }
+
+  .login-box button:hover {
+    background-color:rgba(255, 255, 255, 0.758);
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(249, 248, 248, 0.437),
+                0 0 25px rgba(249, 248, 248, 0.437),
+                0 0 50px rgba(249, 248, 248, 0.437),
+                0 0 100px rgba(249, 248, 248, 0.437);
+  }
+
+  .login-box button span {
+    position: absolute;
+    display: block;
+  }
+  
+.img-form{
+	height: 270px;
+	width: 470px;
+	margin-top: 140px;
+  margin-left: 50px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d8dbe3;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  }
+  .cv-text{
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    margin-left: 70px; 
+    font-size:x-large;
+    font-weight: bold;
+   }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/cloud2.png">
+    <link rel="stylesheet"  href="creativ Markiting.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title> Cloud Project</title>
+</head>
+<body>
+
+          <div class = "topnav">
+      <ul class="topnav">
+        <li><a id ="home" href="/"> Upload IMG   </a></li>
+        <li><a href="displayAllKeys">View Key</a></li>
+        <li><a href="SearchanImage">Search</a></li>
+        <li><a href="memory_Cache">memory cash</a></li>
+        <li><a href="chart">chart</a></li>
+        <li><a href="memcash">memcashed</a></li>
+        <li><a href="displays3">displays3</a></li>
+
+      
+      </ul>
+   </div>
+
+      <div class="img-form">
+       <h4 class="cv-text"> Welcome to cloud Project</h4>
+           <form method="post" action="saveImgLFS"  enctype="multipart/form-data">
+      <div >
+      <input class="lab" type="file"  id="file" name="image"  onchange="loadFile(event)" style="display:none; visibility:none;">
+      <label for="file"  style="padding-left: 10px;color: #4c76c9;font-size:20px ;">Choose a photo</label>
+      </div>
+     <div ></div>
+     <input name="img_key"  id="input1" type="text" placeholder="interkey" style="padding-left: 10px;"><br>
+     <button class="button" style="background-color: #5793cf;border-color:#f2f2f2;color:#f2f2f2
+     ;width: 100%;height: 45px; ;margin-top: 10px;font-size: larger; font-weight: bold; font-family: DroidArabicKufiRegular;">
+     <i class="fas fa-location-arrow  Services-icon"></i>
+     <span>SEND</span></button>  
+     {% for mesg in get_flashed_messages() %}
+     <h1>{{ mesg }}</h1>
+     {% endfor %}
+      </div>
+     </form>
+        </div>
+
+
+       <script>
+        var loadFile = function(event) {
+          var image = document.getElementById('output');
+          image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        </script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<style>
+
+  /* css code for navbar */
+  
+  html {
+      height: 100%;
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+  
+    }
+  
+    body {
+      margin:0;
+      padding:0;
+      background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+      height: 100%
+      
+  
+    }
+  
+    .topnav{
+      position: sticky ;
+    }
+  
+    .topnav{
+      position: sticky;
+    }
+  
+    .btn,
+    .option-btn,
+    .delete-btn{
+       display: block;
+       width: 100%;
+       text-align: center;
+       background-color:#80aae291;
+       color:var(--white);
+       font-size: 2.5rem;
+       font-family: "Rockwell";
+       padding:1.2rem 3rem;
+       border-radius: 1rem;
+       cursor: pointer;
+       margin-top: 1rem;
+  
+  
+    }
+  
+    .btn:hover,
+    .option-btn:hover,
+    .delete-btn:hover{
+      background-image: url("../im4.jpg");
+    }
+  
+  
+    ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow :hidden;
+      background: rgba(70, 47, 159, 0.539);
+    }
+  
+    ul.topnav li {
+      float: left;
+      padding-inline-start: 10px;
+    }
+  
+    ul.topnav li a {
+      display: block;
+      color: rgba(255, 255, 255, 0.909);
+      text-align: center;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold ;
+      font-size: 18px;
+  
+  
+    }
+  
+    ul.topnav li a:hover:not(.active) {
+      background: #73a2f4b0;
+      border-radius: 18px;
+    }
+  
+  
+    ul.topnav li.right {
+      float: right;
+      font-size: 18px;
+      color: #000000;
+   
+      border-radius: 20px;
+      padding-right: 8px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-right: 10px;
+      pointer-events: none;
+  
+  
+    }
+  
+  
+  
+      ::placeholder {
+        color:#2c698d ;
+      }
+  
+  
+
+        #about{
+        font-family: "Segoe Print" ;
+        padding: 0;
+        margin-top: 55px;
+        margin-left: 60px;
+        color: rgb(249, 247, 249);
+        font-weight: bold;
+        font-size: 30px;
+        text-shadow: 5px 5px 10px rgba(94, 93, 95, 0.978);
+        }
+
+        .size {
+        font-family: "Cambria" ;
+        color: rgb(18, 12, 17);
+        font-weight: bold;
+        font-size: 20px;
+       
+
+        }
+
+        .selectRang{
+        align-items: center;
+        margin-left: 90px ;
+
+
+        }
+
+        .select {
+        position: relative;
+        display: flex;
+        width: 15em;
+        height: 5em;
+        line-height: 3;
+        border-radius: 0.35em;
+        margin-top: 7px;
+    }
+
+    select::-ms-expand{
+        display: none;
+    }
+
+
+    .select::after{
+
+       position: absolute;
+       top: 0;
+       right: 0;
+       padding: 0 1em;
+       background: #e3f6f5;
+       transition:.25s all ease;
+       border-color: #2c698d;
+
+    }
+    .select:hover::after{
+        border-color: #2c698d;
+    }
+
+    .button1 {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(#e9e0dff5 ,#68ade59c);
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        padding: 5px 15px;
+        color: rgb(18, 12, 17);
+        font-size: 18px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 25px;
+        font-family: Cambria;
+        box-shadow: 0 0 5px rgb(0 0 0 / 44%);
+        font-weight: bold;
+        margin-right: 95px;
+
+    }
+
+    .button2 {
+        position: relative;
+        display: inline-block;
+        background: linear-gradient(#e9e0dff5 ,#68ade59c);
+        border: 20px;
+        border: none;
+        font-size: 20px;
+        padding: 5px 10px;
+        margin-left:5px;
+        margin-right:5px;
+        color: rgb(18, 12, 17);
+        font-size: 18px;
+        text-decoration: none;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 15px;
+        font-family: Cambria;
+        box-shadow: 0 0 5px rgb(0 0 0 / 44%);
+        font-weight: bold;
+    }
+label{
+    color:rgb(248, 248, 251);
+   
+    padding: 10px;
+    /* position:absolute; */
+    margin-left:0px;
+    border-radius:30px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    font-size:20px;
+    display:flex;
+        
+}
+
+
+select{
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   /* border:0!important; */
+   border-color: #2c698d;
+   border-width: .3em;
+   background: #e3f6f5;
+   background-image: none;
+   flex: 1;
+   padding: 0 .5em;
+   color:#272643;
+   /* cursor:pointer; */
+   font-size: 1em;
+   font-family: 'Poppins', sans-serif;
+   font-weight:bold ;
+    text-align: center;
+}
+select::-ms-expand{
+    display: none;
+}
+.select {
+        position: relative;
+    display: flex;
+    width: 15em;
+    height: 5em;
+    line-height: 3;
+    border-radius: 0.35em;
+    margin-top: 7px;
+}
+
+.select::after{
+    /* content: '\25BC'; */
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 1em;
+   background: #e3f6f5;
+   /* cursor:pointer; */
+   /* pointer-events:none; */
+   transition:.25s all ease;
+   border-color: #2c698d;
+
+}
+.select:hover::after{
+    /* color: #272643; */
+    border-color: #2c698d;
+}
+
+
+.select .select{
+position: absolute;
+    top:0;
+    left: 0;
+    padding-bottom: 33px;
+    font-size: 23px;
+    font-family: Ink Free;
+    font-weight: bold;
+    color: rgb(18, 12, 17);
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+.select_policy{
+    position: absolute;
+    top:150px;
+    left: 0;
+    padding-bottom: 33px;
+    font-size: 20px;
+    font-family: Ink Free;
+    font-weight: bold;
+    color: rgb(18, 12, 17);
+    pointer-events: none;
+    transition: .5s;
+}
+
+select {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(#e9e0dff5 ,#68ade59c);
+    border: 20px;
+    border: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: rgb(18, 12, 17);
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 25px;
+    /* letter-spacing: 2px; */
+    font-family: Cambria;
+    box-shadow: 0 0 5px rgb(0 0 0 / 44%);
+    margin-right: 85px;
+}
+.dfd{
+  display: flex;
+}
+h2 {
+    font-family:monospace ;
+    margin-top: 5px;
+    padding-top: 40px;
+    padding-left: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px;
+   color: rgb(36, 33, 98);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 50px;
+    text-align: center;
+   
+    margin-bottom:20px;
+  }
+    </style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/static/cloud2.png">
+    <link rel="stylesheet" href="creativ Markiting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title> Cloud Project</title>
+</head>
+<body>
+
+
+   <div class = "topnav">
+      <ul class="topnav">
+                <li><a id ="home" href="/"> Home   </a></li>
+        <li><a href="displayAllKeys">View Key</a></li>
+        <li><a href="SearchanImage">Search</a></li>
+        <li><a href="memory_Cache">memory cash</a></li>
+        <li><a href="chart">chart</a></li>
+        <li><a href="#">memcashed</a></li>
+        <li><a href="displays3">displays3</a></li>
+
+      </ul>
+   </div>
+
+
+<div class="main">
+
+    <h2 >Manager App : </h2>
+    <form class="form" method="post" action="saveConfig"  enctype="multipart/form-data" >
+<label>choose Replacment policy: </label>
+<div class="select">
+            <select name="format" id="format">
+               <option value="Random">Random Replacement</option>
+               <option value="Least">Least Recently Used</option>
+            </select>
+          </div>
+          <br>
+        <br><br>
+    </form>
+
+
+
+    <form  method="post" action="saveConfig1"  enctype="multipart/form-data">
+        <div class="size"> size :  <span id="demo"> </span> </div>
+        <div class="selectRang">
+            <input type="range" min="1" max="8" value="0" class="select" name="myRange" id="myRange">
+        </div>
+        <h5>{{number_of_instances}}</h5>
+        <button class="button2"> Manual scaling</button>
+        <!-- <button class="button2"> Auto scaling</button> -->
+
+      </form>
+
+
+      
+        <div class="dfd">
+         <form class = "clear" method="post" action="clear" enctype="multipart/form-data" >
+          <button class="button2"> Clear memcache</button>
+         </form>
+            <form class = "delete" method="post" action="delete" enctype="multipart/form-data" >
+          <button class="button2"> delete data</button>
+         </form>
+</div>
+    
+
+</div>
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+</body>
+
+</html>

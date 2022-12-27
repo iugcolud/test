@@ -1,0 +1,221 @@
+<style>
+
+/* css code for navbar */
+
+html {
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+
+  }
+
+  body {
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(to right, #bacbd4 ,#39b8e6);
+    height: 100%
+    
+
+  }
+
+  .topnav{
+    position: sticky ;
+  }
+
+  .topnav{
+    position: sticky;
+  }
+
+  .btn,
+  .option-btn,
+  .delete-btn{
+     display: block;
+     width: 100%;
+     text-align: center;
+     background-color:#80aae291;
+     color:var(--white);
+     font-size: 2.5rem;
+     font-family: "Rockwell";
+     padding:1.2rem 3rem;
+     border-radius: 1rem;
+     cursor: pointer;
+     margin-top: 1rem;
+
+
+  }
+
+  .btn:hover,
+  .option-btn:hover,
+  .delete-btn:hover{
+    background-image: url("../im4.jpg");
+  }
+
+
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow :hidden;
+    background: rgba(70, 47, 159, 0.539);
+  }
+
+  ul.topnav li {
+    float: left;
+    padding-inline-start: 10px;
+  }
+
+  ul.topnav li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.909);
+    text-align: center;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold ;
+    font-size: 18px;
+
+
+  }
+
+  ul.topnav li a:hover:not(.active) {
+    background: #73a2f4b0;
+    border-radius: 18px;
+  }
+
+
+  ul.topnav li.right {
+    float: right;
+    font-size: 18px;
+    color: #000000;
+ 
+    border-radius: 20px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    pointer-events: none;
+
+
+  }
+
+
+
+    ::placeholder {
+      color:#939596 ;
+    }
+
+
+    .login-box {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+     padding-top: 200px;
+
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background-color:hsl(208, 54%, 62%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+  }
+
+
+
+
+     .main{
+       padding-top: 20px;
+       width: 90%;
+     }
+
+ h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: 0 0 5px;
+    padding: 0;
+   color: rgb(245, 241, 244);
+    /* color: rgb(185, 154, 82); */
+    font-weight: 200px;
+    font-size: 50px;
+    text-align: center;
+   
+    margin-bottom:20px;
+  }
+
+   #mem{
+   list-style-type: none;
+   margin-left:100px;
+   display: list-item;
+   color:#fff;
+
+
+   /* margin-top:2px; */
+}
+.ul-2{
+  /* margin-top:200px; */
+  margin-top:20px;
+  margin-left:20px;
+  margin-bottom: 20px;
+  font-size :18px;
+
+}
+.background-img1{
+    background-image: url("../im4.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    height: 625px;
+  }
+
+    </style>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/static/cloud2.png">
+        <link rel="stylesheet"  href="creativ Markiting.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;900&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <title> Cloud Project</title>
+    </head>
+    <body class="background-image1">
+
+        <div class = "topnav">
+      <ul class="topnav">
+        <li><a id ="home" href="/"> Upload IMG   </a></li>
+        <li><a href="#">View Key</a></li>
+        <li><a href="SearchanImage">Search</a></li>
+        <li><a href="memory_Cache">memory cash</a></li>
+        <li><a href="chart">chart</a></li>
+        <li><a href="memcash">memcashed</a></li>
+        <li><a href="displays3">displays3</a></li>
+      </ul>
+   </div>
+
+    <div class="main">
+          <div class="login-box">
+              <h2>All keys</h2>
+          <ul class="ul-2">
+        {% for key_id in keys_list %}
+          <li id="mem"> {{key_id}} </li>
+       {% endfor %}
+       <script type="text/javascript">
+        let collection = document.getElementByTagName("ul-2");
+        Array.from(collection).forEach(function(element) {
+          console.log(element)
+        });
+        </script>
+        </ul>
+        </div>
+
+      </div>
+
+
+    </body>
+    </html>
+
